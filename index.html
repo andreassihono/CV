@@ -39,33 +39,42 @@
     a:hover {
       text-decoration: underline;
     }
+.personal-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-photo img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+    
   </style>
 </head>
 <body>
 
-  <h2>Personal Information</h2>
-  <table >
-    <tr>
-      <td><strong>Address</strong></td>
-      <td>:</td>
-      <td>Parkview Residence Y25/28, Citra Raya - Tangerang</td>
-    </tr>
-    <tr>
-      <td><strong>Phone</strong></td>
-      <td>:</td>
-      <td>+62-815-36043128</td>
-    </tr>
-    <tr>
-      <td><strong>Email</strong></td>
-      <td>:</td>
-      <td><a href="mailto:andreas.sihono@gmail.com">andreas.sihono@gmail.com</a></td>
-    </tr>
-    <tr>
-      <td><strong>LinkedIn</strong></td>
-      <td>:</td>
-      <td><a href="https://www.linkedin.com/in/andreas-sihono-27033313/" target="_blank">https://www.linkedin.com/in/andreas-sihono-27033313/</a></td>
-    </tr>
-  </table>
+<section>
+  <h2 class="section-title">Personal Information</h2>
+  <div class="personal-info">
+    <div class="profile-photo">
+      <img src="86ca111f-8e2a-4d48-af1f-331bd95af55b.png" alt="Andreas Sihono" />
+    </div>
+    <div class="profile-details">
+      <table>
+        <tr><td><strong>Address</strong></td><td>:</td><td>Parkview Residence Y25/28, Citra Raya - Tangerang</td></tr>
+        <tr><td><strong>Phone</strong></td><td>:</td><td>+62-815-36043128</td></tr>
+        <tr><td><strong>Email</strong></td><td>:</td><td><a href="mailto:andreas.sihono@gmail.com">andreas.sihono@gmail.com</a></td></tr>
+        <tr><td><strong>LinkedIn</strong></td><td>:</td><td><a href="https://www.linkedin.com/in/andreas-sihono-27033313/" target="_blank">linkedin.com/in/andreas-sihono</a></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
 
   <h2>Summary</h2>
   <p>Professional with over 25 years of experience managing various types of manufacturing facilities. Highly focused on value creation and process optimization, with strong leadership skills and expertise in Lean Six Sigma methodology.</p>
