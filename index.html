@@ -46,12 +46,27 @@
     a:hover {
       text-decoration: underline;
     }
-.personal-info {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+ .personal-info {
+      display: flex;
+      align-items: flex-start; /* Align image and text top */
+      gap: 20px;
+    }
+
+    .personal-info img {
+      width: 120px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .info-text p {
+      margin: 5px 0;
+    }
+
+    .info-text strong {
+      display: inline-block;
+      width: 90px;
+    }
+
 
 .profile-photo img {
   width: 140px;
