@@ -4,86 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andreas Sihono - Professional Profile</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', serif;
-      font-size: 15px;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-   h1 {
-      text-align: center;
-      font-size: 28px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-bottom: 40px;
-    }  
-    h2 {
-      margin-top: 40px;
-      color: #003366;
-    }
-    h3 {
-      margin-top: 20px;
-      color: #004080;
-    }
-    table {
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    td {
-      padding: 4px 10px 4px 0;
-      vertical-align: top;
-    }
-    ul {
-      margin-top: 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+ <style>
+  body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+  }
+
   .cv-container {
-      border: 2px solid #003366;
-      border-radius: 15px;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
- .personal-info {
-      display: flex;
-      align-items: flex-start; /* Align image and text top */
-      gap: 20px;
+    border: 2px solid #003366;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #003366;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .personal-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .personal-info img {
+    width: 120px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+  }
+
+  .info-text {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .info-text p {
+    margin: 6px 0;
+  }
+
+  .info-text strong {
+    display: inline-block;
+    width: 90px;
+  }
+
+  .summary p {
+    text-align: justify;
+  }
+
+  .achievements ul {
+    padding-left: 20px;
+  }
+
+  .achievements li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* -------------------- */
+  /* ✅ Mobile Adjustments */
+  /* -------------------- */
+  @media screen and (max-width: 600px) {
+    .cv-container {
+      padding: 20px;
+      border-radius: 0;
     }
 
-    .personal-info img {
-      width: 120px;
-      height: auto;
-      border-radius: 10px;
+    h1 {
+      font-size: 22px;
     }
 
-    .info-text p {
-      margin: 5px 0;
+    .personal-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .info-text {
+      text-align: left;
+      width: 100%;
     }
 
     .info-text strong {
-      display: inline-block;
-      width: 90px;
+      width: auto;
+      display: block;
+      margin-bottom: 2px;
     }
 
+    .personal-info img {
+      margin-bottom: 15px;
+    }
+  }
+</style>
 
-.profile-photo img {
-  width: 180px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-    
-  </style>
 </head>
 <body>
   <div class="cv-container">
